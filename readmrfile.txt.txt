@@ -1,0 +1,28 @@
+Amazon Product Scraping using Selenium and Beautiful Soup
+This Python script allows you to scrape product information from Amazon search results using Selenium and Beautiful Soup. It extracts details like product URLs, names, prices, ratings, reviews, descriptions, manufacturers, and ASINs. The scraped data is saved in a CSV file for further analysis.
+
+Prerequisites
+Python 3.x
+Chrome WebDriver (for Selenium)
+Installation
+Clone the repository or download the script.
+
+Install the required Python packages:
+pip install selenium beautifulsoup4 pandas
+Download the Chrome WebDriver and make sure it's in your system's PATH.
+
+Usage
+Open the script in a code editor and update the following variables according to your preferences:
+
+base_url: The base URL for Amazon search.
+search_query: The search query for the products you want to scrape.
+page_count: The number of pages to scrape.
+Run the script:
+
+python amazon_scraper.py
+The script will launch a Chrome browser, navigate through search results, and scrape the desired data. It will save the scraped data to a CSV file named scraped_data_details.csv.
+
+Notes
+The script uses Selenium to automate browser interactions and Beautiful Soup to parse HTML content.
+You may need to adjust the delays (time.sleep) to ensure that the pages fully load before scraping.
+The script currently extracts product information, price, rating, review count, description, manufacturer, and ASIN. Modify it to extract additional details if needed.
